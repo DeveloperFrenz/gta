@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b0e">
+<title>Los Santos — Browser Gaming</title>
+<style>
+:root{--bg:#090b0e;--panel:#11151a;--line:#252c34;--text:#f5f7fa;--muted:#aab3bd;--accent:#a7f04b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin:auto;padding:0 24px;border-bottom:1px solid #ffffff12}
+.brand{font-weight:900;letter-spacing:1.8px}.brand span{color:var(--accent)}.nav small{color:var(--muted);letter-spacing:1.5px}
+.hero{min-height:610px;display:grid;place-items:center;position:relative;overflow:hidden;padding:80px 24px;background:linear-gradient(90deg,rgba(5,7,9,.96),rgba(5,7,9,.68) 55%,rgba(5,7,9,.35)),radial-gradient(ellipse at 78% 32%,#475b4a 0%,#1b3029 23%,#151d21 44%,#090b0e 75%)}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#ffffff75 .7px,transparent .8px);background-size:23px 23px;opacity:.15;mask-image:linear-gradient(90deg,transparent,#000)}
+.hero-inner{position:relative;max-width:1180px;width:100%;margin:auto}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(44px,8vw,88px);line-height:.98;letter-spacing:-3px;margin:18px 0;max-width:760px;text-transform:uppercase}h1 em{font-style:normal;color:var(--accent)}
+.lead{max-width:590px;color:#c2c9d0;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);border-radius:8px;padding:14px 22px;text-decoration:none;font-weight:800;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--accent);color:#10140b;border-color:var(--accent)}.btn-primary:hover{filter:brightness(1.08);transform:translateY(-1px)}.btn-secondary{background:#ffffff09}.btn-secondary:hover{background:#ffffff15}
+.stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:48px}.stat strong{display:block;font-size:21px}.stat span{font-size:12px;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase}
+.wrap{max-width:1180px;margin:auto;padding:64px 24px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}h2{font-size:28px;margin:0}.muted{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,#151a20,#0e1115);border:1px solid var(--line);border-radius:14px;padding:24px}.card .num{font-size:12px;color:var(--accent);font-weight:900;letter-spacing:2px}.card h3{margin:12px 0 8px}.card p{color:var(--muted);margin:0}
+.playbox{border:1px solid var(--line);border-radius:16px;background:#0d1116;padding:28px;display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center}.status{display:inline-flex;gap:8px;align-items:center;border:1px solid #34402a;background:#182016;color:#c9f6a3;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.note{background:#19170f;border:1px solid #4a3d1d;border-radius:10px;padding:16px;color:#e8d8a6;font-size:14px}.screen{min-height:210px;display:grid;place-items:center;text-align:center;background:radial-gradient(ellipse,#202a23,#0a0d10 70%);border:1px solid #252d32;border-radius:12px;padding:20px}.screen strong{display:block;font-size:20px;margin:8px 0}.screen p{max-width:360px;color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:28px 24px;color:var(--muted);font-size:13px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:760px){.cards{grid-template-columns:1fr}.playbox{grid-template-columns:1fr}.hero{min-height:570px}h1{letter-spacing:-1.5px}.nav small{display:none}.stats{gap:20px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="brand">LOS <span>SANTOS</span> / WEB</div><small>COMMUNITY GAMING CONCEPT</small><a href="#play" class="btn btn-secondary" style="padding:9px 14px">PLAY AREA ↘</a></header>
+<main>
+<section class="hero"><div class="hero-inner">
+<div class="eyebrow">Open world • Browser-first concept</div>
+<h1>YOUR NEXT<br><em>ADVENTURE</em></h1>
+<p class="lead">A cinematic home for browser gaming. Start from one clean page, check your setup, and connect to a game stream you’re authorized to use.</p>
+<div class="actions"><a class="btn btn-primary" href="#play">▶ &nbsp; PLAY NOW</a><a class="btn btn-secondary" href="#how">HOW IT WORKS ↓</a></div>
+<div class="stats"><div class="stat"><strong>PC READY</strong><span>Keyboard + mouse</span></div><div class="stat"><strong>LOW OVERHEAD</strong><span>Lightweight website</span></div><div class="stat"><strong>STREAM LINK</strong><span>Provider required</span></div></div>
+</div></section>
+<section class="wrap" id="how"><div class="section-head"><div><div class="eyebrow">The setup</div><h2>Built for a smooth start</h2></div><div class="muted">01 — 03</div></div>
+<div class="cards"><article class="card"><div class="num">01 / CONNECT</div><h3>Use an authorized stream</h3><p>Connect a supported cloud gaming service or your own licensed PC streaming session. This page does not host GTA V files.</p></article><article class="card"><div class="num">02 / CHECK</div><h3>Test your connection</h3><p>Stable broadband and a nearby streaming server help reduce input delay. Wi‑Fi quality and network congestion still matter.</p></article><article class="card"><div class="num">03 / PLAY</div><h3>Enter fullscreen</h3><p>When a compatible stream is connected, use its controls and fullscreen option for the best browser experience.</p></article></div></section>
+<section class="wrap" id="play" style="padding-top:0"><div class="section-head"><div><div class="eyebrow">Game session</div><h2>Launch area</h2></div><span class="status"><span class="dot"></span> STREAM NOT CONNECTED</span></div>
+<div class="playbox"><div><h3 style="font-size:24px;margin-top:0">Ready when your stream is</h3><p class="muted">This starter website is hosted separately from the game. Add your authorized provider's launch URL or embed integration here once you have one that permits browser access.</p><div class="note"><strong>Heads up:</strong> Free static hosting can serve this website, but it cannot provide the GPU server needed to run GTA V. A free, always-available GTA V stream is not guaranteed.</div></div>
+<div class="screen"><div><div style="font-size:34px">⌁</div><strong>Waiting for a game stream</strong><p>No stream URL is configured yet. Once you choose a legitimate service, connect it here using that provider's supported method.</p><button class="btn btn-primary" id="helpBtn" type="button">VIEW SETUP CHECKLIST</button></div></div></div></section>
+</main>
+<footer><div class="footer-inner"><span>LOS SANTOS / WEB — starter template</span><span>Unofficial fan concept. Not affiliated with Rockstar Games or Take-Two Interactive.</span></div></footer>
+<script>
+document.getElementById('helpBtn').addEventListener('click',()=>alert('Setup checklist:\\n1. Choose a legitimate cloud gaming or remote-play service.\\n2. Confirm it supports your GTA V license and browser/PC setup.\\n3. Add only its official supported launch/embed flow.\\n4. Test network latency and fullscreen.\\n\\nThis template does not include GTA V or a game-streaming backend.'));
+</script>
+</body>
+</html>
